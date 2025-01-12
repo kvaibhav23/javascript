@@ -18,3 +18,21 @@ const myFunction = function(){
 }
 const jojo = null
 console.log(typeof heroes) // typeof null is object
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack(Used in Primitive datatypes)  Heap(Used in Non Primitve Data types)
+//variable2=variable1
+// In primitive datatypes(stored in stack) if the variable2 value is change then the variable1's value on which variable2 is dependent will not change.
+//while in non-primitive datatypes(stored in heap) have diiferent working like their value got change as they are referred to the original value while in case primitive datatypes the copy was supplied for changing of data.
+let userOne = {
+    email:"kalpakag23@iitk.ac.in",
+    name: "Kalpak Agrawal",
+
+}
+let userTwo = userOne
+userTwo.email = "aryan23@iitk.ac.in"
+console.log(userOne)
+console.log(userTwo)
+
+//We got copy in case of Stack, while we got original reference in case of heap
